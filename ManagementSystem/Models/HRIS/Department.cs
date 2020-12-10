@@ -15,6 +15,7 @@ namespace ManagementSystem.Models.HRIS
             MaxLength(150, ErrorMessage = "Only 150 characters are allowed for this field.")]
         public string Name { get; set; }
 
+        // Collection
         public virtual ICollection<Employee> Employees { get; set; }
 
     }

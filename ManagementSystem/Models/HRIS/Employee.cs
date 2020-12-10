@@ -34,8 +34,8 @@ namespace ManagementSystem.Models.HRIS
 
         [Required(ErrorMessage = "Age is required.")]
         public int Age { get; set; }
-        public decimal Weight { get; set; }
-        public decimal Height { get; set; }
+        public decimal? Weight { get; set; }
+        public decimal? Height { get; set; }
         public string Nationality { get; set; }
         public string Region { get; set; }
 
@@ -45,12 +45,13 @@ namespace ManagementSystem.Models.HRIS
         public bool IsDomainUser { get; set; }
 
         // Foreign Keys
-
         [ForeignKey("DepartmentRefId")]
+        [Required, Display(Name = "Department")]
         public Department Department { get; set; }
 
         // Collections
         public virtual ICollection<EmployeeRelative> EmployeeRelatives { get; set; }
+        public virtual User User { get; set; }
 
     }
 }
