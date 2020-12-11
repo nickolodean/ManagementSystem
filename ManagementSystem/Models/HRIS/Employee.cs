@@ -19,6 +19,7 @@ namespace ManagementSystem.Models.HRIS
     public class Employee
     {
         public int Id { get; set; }
+        [Required(ErrorMessage = "Employee ID is required."), Display(Name = "Employee ID")]
         public string EmployeeNumber { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter worker's first name."), Display(Name = "First Name")]
@@ -30,6 +31,8 @@ namespace ManagementSystem.Models.HRIS
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter worker's last name."), Display(Name = "Last Name")]
         public string LastName { get; set; }
         public string Alias { get; set; }
+
+        [Required(ErrorMessage = "Position is required.")]
         public string Position { get; set; }
 
         [Required(ErrorMessage = "Age is required.")]
@@ -41,7 +44,12 @@ namespace ManagementSystem.Models.HRIS
 
         [Required(ErrorMessage = "Civil status required."), Display(Name = "Civil Status")]
         public MaritalStatus CivilStatus { get; set; }
+
+        [Required, DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime Birthday { get; set; }
+
+        [Required(ErrorMessage = "Please select user authentication method."), Display(Name = "Is this worker have a windows login?")]
         public bool IsDomainUser { get; set; }
 
         // Foreign Keys

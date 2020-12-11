@@ -46,6 +46,14 @@ namespace ManagementSystem.Controllers
         // GET: Employees/Create
         public IActionResult Create()
         {
+            // Populate dropdown list of civil status
+            ViewBag.CivilStatuses = new SelectList(Enum.GetValues(typeof(MaritalStatus))
+                .Cast<MaritalStatus>().Select(civil => new SelectListItem
+                {
+                    Text = civil.ToString(),
+                    Value = ((int)civil).ToString()
+                }).ToList(), "Value", "Text");
+
             return View();
         }
 
