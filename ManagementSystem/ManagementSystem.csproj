@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\IMS\" />
+    <Folder Include="Models\ViewModels\" />
   </ItemGroup>
 
 </Project>

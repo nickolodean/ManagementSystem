@@ -56,10 +56,10 @@ namespace ManagementSystem.Models.HRIS
         [ForeignKey("DepartmentRefId")]
         [Required, Display(Name = "Department")]
         public Department Department { get; set; }
+        public virtual User User { get; set; }
 
         // Collections
         public virtual ICollection<EmployeeRelative> EmployeeRelatives { get; set; }
-        public virtual User User { get; set; }
 
     }
 }
