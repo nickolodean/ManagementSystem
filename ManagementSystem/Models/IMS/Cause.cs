@@ -8,6 +8,7 @@ namespace ManagementSystem.Models.IMS
 {
     public class Cause
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Incident Cause name is required. Please fill out the filled.")]

@@ -10,7 +10,10 @@ namespace ManagementSystem.Models.IMS
 {
     public class Action
     {
+        [Key]
         public int Id { get; set; }
+
+        [Required(AllowEmptyStrings = false, ErrorMessage = "This field is required.")]
         public string ImmediateAction { get; set; }
 
         [Required, DataType(DataType.Date)]

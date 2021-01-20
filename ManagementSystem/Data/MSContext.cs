@@ -33,6 +33,7 @@ namespace ManagementSystem.Data
         public DbSet<ReviewStatus> ReviewStatus { get; set; }
         public DbSet<Models.IMS.Type> Type { get; set; }
         public DbSet<TypeCategory> TypeCategory { get; set; }
+        public DbSet<ManagementSystem.Models.IMS.InitialReport> InitialReport { get; set; }
 
 
     }

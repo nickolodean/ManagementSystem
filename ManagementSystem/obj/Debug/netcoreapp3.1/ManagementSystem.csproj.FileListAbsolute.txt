@@ -179,3 +179,9 @@ C:\Users\nickorother.belir\source\repos\ManagementSystem\ManagementSystem\obj\De
 C:\Users\nickorother.belir\source\repos\ManagementSystem\ManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Details.cshtml.g.cs
 C:\Users\nickorother.belir\source\repos\ManagementSystem\ManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Edit.cshtml.g.cs
 C:\Users\nickorother.belir\source\repos\ManagementSystem\ManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Index.cshtml.g.cs
+C:\Users\nickorother.belir\source\repos\ManagementSystem\ManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_IncidentMS.cshtml.g.cs
+C:\Users\nickorother.belir\source\repos\ManagementSystem\ManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\InitialReports\Create.cshtml.g.cs
+C:\Users\nickorother.belir\source\repos\ManagementSystem\ManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\InitialReports\Delete.cshtml.g.cs
+C:\Users\nickorother.belir\source\repos\ManagementSystem\ManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\InitialReports\Details.cshtml.g.cs
+C:\Users\nickorother.belir\source\repos\ManagementSystem\ManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\InitialReports\Edit.cshtml.g.cs
+C:\Users\nickorother.belir\source\repos\ManagementSystem\ManagementSystem\obj\Debug\netcoreapp3.1\Razor\Views\InitialReports\Index.cshtml.g.cs

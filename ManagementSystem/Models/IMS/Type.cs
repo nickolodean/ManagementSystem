@@ -8,6 +8,7 @@ namespace ManagementSystem.Models.IMS
 {
     public class Type
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Incident Type name is required. Please fill out the filled.")]

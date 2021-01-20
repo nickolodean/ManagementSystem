@@ -8,6 +8,7 @@ namespace ManagementSystem.Models.IMS
 {
     public class Category
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Category name is required. Please fill out the filled.")]

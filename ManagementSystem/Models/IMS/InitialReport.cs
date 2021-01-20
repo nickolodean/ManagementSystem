@@ -21,6 +21,7 @@ namespace ManagementSystem.Models.IMS
             Closed
         }
 
+        [Key]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Title is required.", AllowEmptyStrings = false), 

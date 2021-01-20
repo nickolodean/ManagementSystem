@@ -9,6 +9,7 @@ namespace ManagementSystem.Models.IMS
 {
     public class TypeCategory
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Incident Type Category name is required. Please fill out the filled.")]

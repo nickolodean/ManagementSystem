@@ -8,6 +8,7 @@ namespace ManagementSystem.Models.IMS
 {
     public class Origin
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Incident Origin name is required. Please fill out the filled.")]

@@ -8,6 +8,7 @@ namespace ManagementSystem.Models.IMS
 {
     public class Impact
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Incident Impact name is required. Please fill out the filled.")]

@@ -1,0 +1,65 @@
+﻿@model ManagementSystem.Models.IMS.InitialReport
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_IncidentMS.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>InitialReport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IRNumber" class="control-label"></label>
+                <input asp-for="IRNumber" class="form-control" />
+                <span asp-validation-for="IRNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IncidentDate" class="control-label"></label>
+                <input asp-for="IncidentDate" class="form-control" />
+                <span asp-validation-for="IncidentDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReportedDate" class="control-label"></label>
+                <input asp-for="ReportedDate" class="form-control" />
+                <span asp-validation-for="ReportedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Details" class="control-label"></label>
+                <input asp-for="Details" class="form-control" />
+                <span asp-validation-for="Details" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IncidentLocation" class="control-label"></label>
+                <input asp-for="IncidentLocation" class="form-control" />
+                <span asp-validation-for="IncidentLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-control"></select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

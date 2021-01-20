@@ -18,7 +18,9 @@ namespace ManagementSystem.Models.HRIS
 
     public class Employee
     {
+        [Key]
         public int Id { get; set; }
+
         [Required(ErrorMessage = "Employee ID is required."), Display(Name = "Employee ID")]
         public string EmployeeNumber { get; set; }
 
