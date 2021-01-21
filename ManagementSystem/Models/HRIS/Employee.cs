@@ -24,24 +24,32 @@ namespace ManagementSystem.Models.HRIS
         [Required(ErrorMessage = "Employee ID is required."), Display(Name = "Employee ID")]
         public string EmployeeNumber { get; set; }
 
+        [StringLength(50, ErrorMessage = "Maximum length exceeded. (50)")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter worker's first name."), Display(Name = "First Name")]
         public string FirstName { get; set; }
 
-        [Display(Name = "Middle Name")]
+        [Display(Name = "Middle Name"), StringLength(30, ErrorMessage = "Maximum length exceeded. (30)")]
         public string MiddleName { get; set; }
 
+        [StringLength(30, ErrorMessage = "Maximum length exceeded. (30)")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter worker's last name."), Display(Name = "Last Name")]
         public string LastName { get; set; }
+
+        [StringLength(20, ErrorMessage = "Maximum length exceeded. (20)")]
         public string Alias { get; set; }
 
-        [Required(ErrorMessage = "Position is required.")]
+        [Required(ErrorMessage = "Position is required."), StringLength(20, ErrorMessage = "Maximum length exceeded. (20)")]
         public string Position { get; set; }
 
         [Required(ErrorMessage = "Age is required.")]
         public int Age { get; set; }
         public decimal? Weight { get; set; }
         public decimal? Height { get; set; }
+
+        [StringLength(20, ErrorMessage = "Maximum length exceeded. (20)")]
         public string Nationality { get; set; }
+
+        [StringLength(20, ErrorMessage = "Maximum length exceeded. (20)")]
         public string Region { get; set; }
 
         [Required(ErrorMessage = "Civil status required."), Display(Name = "Civil Status")]
@@ -53,6 +61,8 @@ namespace ManagementSystem.Models.HRIS
 
         [Required(ErrorMessage = "Please select user authentication method."), Display(Name = "Is this worker have a windows login?")]
         public bool IsDomainUser { get; set; }
+        public int VacationLeave { get; set; }
+        public int SickLeave { get; set; }
 
         // Foreign Keys
         [ForeignKey("DepartmentRefId")]

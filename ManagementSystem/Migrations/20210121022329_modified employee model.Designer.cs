@@ -4,14 +4,16 @@ using ManagementSystem.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ManagementSystem.Migrations
 {
     [DbContext(typeof(MSContext))]
-    partial class MSContextModelSnapshot : ModelSnapshot
+    [Migration("20210121022329_modified employee model")]
+    partial class modifiedemployeemodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
